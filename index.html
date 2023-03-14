@@ -10,7 +10,9 @@
 </head>
 <body>
     <div id="app">
-        <h1 v-html="mensaje"></h1>
+        <input type="text" v-model="mensaje">
+        <h1 v-text="mensaje"></h1>
+        <p v-text="mensaje"></p>
     </div>
 </body>
 </html>

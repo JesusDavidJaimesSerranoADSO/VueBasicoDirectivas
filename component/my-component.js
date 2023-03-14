@@ -1,7 +1,7 @@
 export default{
     data(){
         return{
-            mensaje:'<del>holaaa mundoooo</del>'
+            mensaje:'escribeme'
         }
     }
 }
