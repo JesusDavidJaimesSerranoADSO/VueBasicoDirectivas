@@ -10,15 +10,8 @@
 </head>
 <body>
     <div id="app">
-        <div>
-            <input type="radio" v-model="opcion" value="opcion1" name="elegir"> ver
-            <input type="radio" v-model="opcion" value="opcion2" name="elegir"> ocultar
-        </div>
-        
-        <div style="height: 35px; background: cadetblue;">
-            <div v-if="opcion == `opcion1`" v-text="mensaje1"></div>
-            <div v-else-if="opcion == `opcion2`" v-text="mensaje2"></div>
-
+        <div v-for="items in listado">
+            <h1 v-text="items"></h1>
         </div>
     </div>
 </body>
