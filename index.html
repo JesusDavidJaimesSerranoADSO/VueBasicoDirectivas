@@ -11,12 +11,14 @@
 <body>
     <div id="app">
         <div>
-            <input type="radio" v-model="centinela" v-bind:value="true"> ver
-            <input type="radio" v-model="centinela" v-bind:value="false"> ocultar
+            <input type="radio" v-model="opcion" value="opcion1" name="elegir"> ver
+            <input type="radio" v-model="opcion" value="opcion2" name="elegir"> ocultar
         </div>
         
-        <div v-show="centinela" style="height: 35px; background: cadetblue;">
-            ghhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+        <div style="height: 35px; background: cadetblue;">
+            <div v-if="opcion == `opcion1`" v-text="mensaje1"></div>
+            <div v-else-if="opcion == `opcion2`" v-text="mensaje2"></div>
+
         </div>
     </div>
 </body>
